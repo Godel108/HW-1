@@ -1,0 +1,36 @@
+#include <iostream> 
+
+using namespace std;
+
+class stat
+{
+public:
+  int last;
+  void nextnumber(int num){
+     last= num;
+  }
+};
+
+
+int main(int argc, char* argv[])
+{
+  stat s;
+  s.last=9;
+  cout<< s.last << endl;
+  s.nextnumber(5);
+  cout<< s.last << endl;
+
+  cout<< "count="<< argc<< "\n";
+
+  int i = 0;
+  for (i = 0; i < 3; ++i)
+    { 
+      cout << "in the loop!" << endl;
+      cout << "argv=" << argv[i] << "\n";
+    }
+
+  cout << "end" << endl;
+
+
+  return 0;
+}
